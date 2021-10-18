@@ -1,0 +1,92 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1634568743786' stop='1634568803812'>
+    <name>validation of searching different product in amazon</name>
+    <title>validation of searching different product in amazon</title>
+    <test-cases>
+        <test-case start='1634568743786' status='broken' stop='1634568803811'>
+            <name>should have product search &amp; verify the product name</name>
+            <title>should have product search &amp; verify the product name</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+                <parameter kind='argument' name='browser' value='chrome-94.0.4606.81'/>
+            </parameters>
+            <steps>
+                <step start='1634568743788' status='passed' stop='1634568776600'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='8112cc45-cb00-40e6-831f-0314a1a07ec2-attachment.json' type='application/json' size='36'/>
+                        <attachment title='Response' source='f7e3e973-9232-4feb-a6ea-670428de06cb-attachment.json' type='application/json' size='100'/>
+                    </attachments>
+                    <steps>
+                        <step start='1634568743795' status='passed' stop='1634568776441'>
+                            <name>GET /session/:sessionId/title</name>
+                            <title>GET /session/:sessionId/title</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1634568778613' status='passed' stop='1634568778622'>
+                    <name>GET /session/:sessionId/url</name>
+                    <title>GET /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Response' source='7d58d0a5-2e63-420b-8c84-0733423a5357-attachment.json' type='application/json' size='24'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634568780637' status='passed' stop='1634568780662'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='f50aa873-cade-4c9e-96a1-3905fcb48332-attachment.json' type='application/json' size='81'/>
+                        <attachment title='Response' source='0eb5c0ee-d0f1-4a81-a89f-14ba4c135cc6-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634568780668' status='passed' stop='1634568780681'>
+                    <name>POST /session/:sessionId/execute/sync</name>
+                    <title>POST /session/:sessionId/execute/sync</title>
+                    <attachments>
+                        <attachment title='Request' source='4c002e33-fd31-4737-8fd5-5b881efb185e-attachment.json' type='application/json' size='8337'/>
+                        <attachment title='Response' source='c2a86edc-1f15-47ce-a253-992a22d3f7d0-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634568780681' status='passed' stop='1634568780697'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='7be9ca9d-99c0-4c68-a800-bc23747defa3-attachment.json' type='application/json' size='81'/>
+                        <attachment title='Response' source='f7346539-bab7-4267-a6e2-985a85490746-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1634568780701' status='broken' stop='1634568803810'>
+                    <name>POST /session/:sessionId/element/a152ee9d-7108-4245-ada6-6530b5274ccf/click</name>
+                    <title>POST /session/:sessionId/element/a152ee9d-7108-4245-ada6-6530b5274ccf/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Timeout of 60000ms exceeded. The execution in the test "validation of searching different product in amazon should have product search &amp; verify the product name" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (E:\WEB_DRIVER\test\specs\list.js)</message>
+                <stack-trace>Error: Timeout of 60000ms exceeded. The execution in the test "validation of searching different product in amazon should have product search &amp; verify the product name" took too long. Try to reduce the run time or increase your timeout for test specs (https://webdriver.io/docs/timeouts). (E:\WEB_DRIVER\test\specs\list.js)
+                    at createTimeoutError (E:\WEB_DRIVER\node_modules\mocha\lib\errors.js:498:15)
+                    at Test.Runnable._timeoutError (E:\WEB_DRIVER\node_modules\mocha\lib\runnable.js:431:10)
+                    at Timeout.&lt;anonymous> (E:\WEB_DRIVER\node_modules\mocha\lib\runnable.js:246:24)
+                    at listOnTimeout (internal/timers.js:557:17)
+                    at processTimers (internal/timers.js:500:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

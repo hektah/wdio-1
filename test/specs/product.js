@@ -13,6 +13,7 @@ describe('validation of searching different product in amazon', () => {
         await browser.pause(2000);
         expect(browser).toHaveUrl("https://www.amazon.in");
         await browser.pause(2000);
+        
         await ProductPage.txtSearchBox.waitForClickable({timeout:2000});
         await ProductPage.txtSearchBox.setValue("watches");
         await ProductPage.btnSearch.click();
